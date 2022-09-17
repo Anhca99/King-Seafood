@@ -114,6 +114,7 @@ html {
     list-style: none;
     z-index: 1;
     position: relative;
+    box-shadow: 0 2px 3px 0 #ccc;
 }
 
 #nav .danh-muc {
@@ -259,40 +260,16 @@ html {
     margin-left: -6px;   
 }
 
-/* css slider */
-#slider{
-    display: inline-block;
-    margin-top: 135px;
-    height: 0;
-    width: 100%;
-    /* padding: 19% 0; */
-    padding-top: 50%;
-    background: url('../img/slider/slider.png') top center / cover no-repeat;
-}
-
-/* css content */
-/* đặt class css chung */
+/* Phần content */
 .css-content {
     max-width: 94%;
     margin-left: auto;
     margin-right: auto;
-    /* margin-top: 200px; */
+    margin-top: 160px;
     /* padding-top: 140px; */
     /* padding-bottom: 140px; */
     padding-left: 16px;
     padding-right: 16px;
-}
-
-/* css slider chung */
-.slider-chung {
-    padding: 20% 20px;
-    margin-left: 56px;
-    margin-right: 56px;
-    margin-top: 40px;
-}
-
-.slider-tom {
-    background: url('../img/tom/slider-tom.jpg') top center / cover no-repeat;
 }
 
 .css-tieu-de {
@@ -384,47 +361,4 @@ html {
 
 .loai-mot .ban-chay-body .buy-now-btn:hover {
     color: rgb(38, 199, 16);
-}
-
-/* .tom {
-    display: inline-block;
-} */
-/* slider Cua-Ghe */
-.slider-cua-ghe {
-    
-}
-
-.slide-chung-con {
-    padding: 36%;
-    padding-top: 130px;
-    margin-top: 95px;
-    margin-left: -20px;
-    margin-right: -20px;
-    margin-bottom: -269px;
-    background: url('../img/cua/slider-cua.jpg  ') top center / cover no-repeat;
-
-}
-
-/* slider Ca  */
-.slider-ca-con {
-    padding-top: 150px;
-    background: url('../img/ca/slider-ca.jpg') top center / cover no-repeat;
-}
-
-/* slider bao-ngu-hau */
-.slide-bao-ngu-con {
-    padding-top: 150px;
-    background: url('../img/bao-ngu/slider-bao-ngu-hau.jpg') top center / cover no-repeat;
-}
-
-/* slider bach-tuoc-muc */
-.slide-bach-tuoc-muc-con {
-    padding-top: 200px;
-    background: url('../img/bach-tuoc/slider-bach-tuoc.jpg') top center / cover no-repeat;
-}
-
-/* slider hai-san-dong-lanh */
-.slide-hai-san-dong-lanh-con {
-    padding-top: 200px;
-    background: url('../img/hai-san-dong-lanh/slider-hai-san-dong-lanh.jpg') top center / cover no-repeat;
 }

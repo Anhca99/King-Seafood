@@ -12,101 +12,607 @@
     <div id="main">
         <!-- Phần header -->
         <div id="header">
-            <ul id="nav">
-                <li>
-                    <a href="">
-                        <img class="icon-full" src="./assets/img/tom/icon.png" alt="tom">
-                        Tôm
-                        <i class="nav-arrow-down ti-angle-down"></i>
-                    </a>
-                    <ul class="subnav">
-                        <li><a href="">Tôm Hùm Ở Mỹ</a></li>
-                        <li><a href="">Tôm Càng Bạc Liêu</a></li>
-                        <li><a href="">Tôm Sú Bạc Liêu</a></li>
-                        <li><a href="">Tôm Thẻ Bạc Liêu</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="">
-                        <img class="icon-full" src="./assets/img/cua/icon.jpg" alt="cua-ghe">
-                        Cua - Ghẹ
-                        <i class="nav-arrow-down ti-angle-down"></i>
-                    </a>
-                    <ul class="subnav">
-                        <li><a href="">King Crab Ở Mỹ</a></li>
-                        <li><a href="">Cua Gạch Cà Mau</a></li>
-                        <li><a href="">Cua Nâu Hàn Quốc</a></li>
-                        <li><a href="">Ghẹ Xanh Vũng Tàu</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="">
-                        <img class="icon-full" src="./assets/img/ca/icon-ca.jpg" alt="ca">
-                        Cá
-                        <i class="nav-arrow-down ti-angle-down"></i>
-                    </a>
-                    <ul class="subnav">
-                        <li><a href="">Cá Mú Nhật Bản</a></li>
-                        <li><a href="">Cá Tầm Hàn Quốc</a></li>
-                        <li><a href="">Cá Hồi Nhật Bản</a></li>
-                        <li><a href="">Cá Basa Cần Thơ</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="">
-                        <img class="icon-full" src="./assets/img/bao-ngu/icon-baongu.jpg" alt="bao-ngu-hao">
-                        Bào Ngư - Hàu
-                        <i class="nav-arrow-down ti-angle-down"></i>
-                    </a>
-                    <ul class="subnav">
-                        <li><a href="">Bào Ngư Nhật Bản</a></li>
-                        <li><a href="">Bào Ngư Hàn Quốc</a></li>
-                        <li><a href="">Hàu Vũng Tàu</a></li>
-                        <li><a href="">Hàu Mỹ</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="">
-                        <img class="icon-full" src="./assets/img/bach-tuoc/icon-bach-tuoc.jpg" alt="bach-tuoc-muc">
-                        Bạch Tuộc - Mực
-                        <i class="nav-arrow-down ti-angle-down"></i>
-                    </a>
-                    <ul class="subnav">
-                        <li><a href="">Bạch Tuộc Đà Nẵng</a></li>
-                        <li><a href="">Bạch Tuộc Vũng Tàu</a></li>
-                        <li><a href="">Mực Trứng Quy Nhơn</a></li>
-                        <li><a href="">Mực Nang Núc Korea</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="">
-                        <img class="icon-full" src="./assets/img/hai-san-dong-lanh/icon-sea-cool.jpg" alt="hai-san-dong-lanh">
-                        Hải Sản Đông Lạnh
-                    </a>
-                </li>
-            </ul>
-
-            <!-- Search -->
-            <div class="search-btn">
-                <i class="search-icon ti-search"></i>
+            <div id="tieu-de">
+                <div class="logo">
+                    <img class="logo-king-crab" src="./assets/img/logo/logo.jpg" alt="king-crab">
+                    <p class="text-item text-transform">Vua Hải Sản</p>
+                </div>
+                <h1 class="text-logo text-transform">Ăn Chất Lượng Sống Thịnh Vượng</h1>
+                <!-- Search -->
+                <div class="search-btn">
+                    <div class="input-item">
+                        <input class="search-input" type="text" placeholder="Bạn tìm gì hôm nay?">
+                        <button class="search-icon ti-search"></button>
+                    </div>
+                </div>
+                <div class="tieu-de-cuoi">
+                    <p class="dang-nhap text-transform">Đăng Nhập</p>
+                    <img class="icon-gio-hang" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNQWoO1R4NDBxIIub4n2v0GUBu18CySzMxSA&usqp=CAU" alt="">
+                </div>
             </div>
+
+            <!-- Danh sách sản phẩm -->
+            <div id="nav">
+                <ul class="danh-muc">
+                    <li>
+                        <a href="">
+                            <i class="menu-icon ti-menu"></i>
+                            Danh Mục
+                            <i class="icon-down ti-angle-down"></i>
+                        </a>
+                        <ul class="danh-muc-item">
+                            <li>
+                                <a href="./assets/lists/banchay/banchay.html">
+                                    <img class="icon-full" src="./assets/img/ban-chay/ban-chay1.png" alt="banchay">
+                                    Bán Chạy
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#tom-o-day">
+                                    <img class="icon-full" src="./assets/img/tom/icon.png" alt="tom">
+                                    Tôm
+                                    <i class="nav-arrow-down ti-angle-right"></i>
+                                </a>
+                                
+                                <ul class="subnav">
+                                    <li><a href="">Tôm Hùm Ở Mỹ</a></li>
+                                    <li><a href="">Tôm Càng Bạc Liêu</a></li>
+                                    <li><a href="">Tôm Sú Bạc Liêu</a></li>
+                                    <li><a href="">Tôm Thẻ Bạc Liêu</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#cua-ghe-o-day">
+                                    <img class="icon-full" src="./assets/img/cua/icon.jpg" alt="cua-ghe">
+                                    Cua - Ghẹ
+                                    <i class="nav-arrow-down ti-angle-right"></i>
+                                </a>
+                                <ul class="subnav">
+                                    <li><a href="">King Crab Ở Mỹ</a></li>
+                                    <li><a href="">Cua Gạch Cà Mau</a></li>
+                                    <li><a href="">Cua Nâu Hàn Quốc</a></li>
+                                    <li><a href="">Ghẹ Xanh Vũng Tàu</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#ca-o-day">
+                                    <img class="icon-full" src="./assets/img/ca/icon-ca.jpg" alt="ca">
+                                    Cá
+                                    <i class="nav-arrow-down ti-angle-right"></i>
+                                </a>
+                                <ul class="subnav">
+                                    <li><a href="">Cá Mú Nhật Bản</a></li>
+                                    <li><a href="">Cá Tầm Hàn Quốc</a></li>
+                                    <li><a href="">Cá Hồi Nhật Bản</a></li>
+                                    <li><a href="">Cá Basa Cần Thơ</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#bao-ngu-hau-o-day">
+                                    <img class="icon-full" src="./assets/img/bao-ngu/icon-baongu.jpg" alt="bao-ngu-hao">
+                                    Bào Ngư - Hàu
+                                    <i class="nav-arrow-down ti-angle-right"></i>
+                                </a>
+                                <ul class="subnav noi-len ">
+                                    <li><a href="">Bào Ngư Nhật Bản</a></li>
+                                    <li><a href="">Bào Ngư Hàn Quốc</a></li>
+                                    <li><a href="">Hàu Vũng Tàu</a></li>
+                                    <li><a href="">Hàu Mỹ</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#bach-tuoc-muc-o-day">
+                                    <img class="icon-full" src="./assets/img/bach-tuoc/icon-bach-tuoc.jpg" alt="bach-tuoc-muc">
+                                    Bạch Tuộc - Mực
+                                    <i class="nav-arrow-down ti-angle-right"></i>
+                                </a>
+                                <ul class="subnav noi-len ">
+                                    <li><a href="">Bạch Tuộc Đà Nẵng</a></li>
+                                    <li><a href="">Bạch Tuộc Vũng Tàu</a></li>
+                                    <li><a href="">Mực Trứng Quy Nhơn</a></li>
+                                    <li><a href="">Mực Nang Núc Korea</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#hai-san-dong-lanh-o-day">
+                                    <img class="icon-full" src="./assets/img/hai-san-dong-lanh/icon-sea-cool.jpg" alt="hai-san-dong-lanh">
+                                    Hải Sản Đông Lạnh
+                                </a>
+                            </li>
+                        </ul>
+                        
+                    </li>
+                </ul>
+                <ul class="header-con-lai">
+                    <li>
+                        <a href="">
+                            <img class="icon-phuc-vu" src="./assets/img/cam-ket/camket1.png" alt="Cam-ket">
+                            Cam Kết Chất Lượng An Toàn Xuất Xứ
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img class="icon-phuc-vu" src="./assets/img/1-doi-1/reload.png" alt="1-doi-1">
+                            1 Đổi 1 Trong 2h Nhanh Chóng, Tận Nhà
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img class="icon-phuc-vu" src="./assets/img/dong-goi/donggoi1.png" alt="dong-goi">
+                            Chuẩn Đóng Gói Sạch Sẽ, Tiện Lợi
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img class="icon-phuc-vu" src="./assets/img/shipper/icon-shipper.png" alt="giao-hang">
+                            Giao Hàng Nhanh Miễn Phí Ship Dưới 10km
+                        </a>
+                    </li>
+                </ul>
+            </div>    
         </div>
 
         <!-- Phần slider -->
         <div id="slider">
-            <div class="text-content">
-                
+            <div class="text-content ">
             </div>
         </div>
         
         <!-- Phần content -->
         <div id="content">
 
+            <!-- Ban chay -->
+            <div class="Ban-chay css-content" >
+                
+                <div class="tieu-de-ban-chay css-tieu-de">
+                    <a class="title-full" href="./assets/lists/banchay/banchay.html">Bán Chạy Nhất</a>
+                    <button class="xem-them-btn">Xem Thêm</button>
+                </div>
+
+                <!-- danh sách bán chạy -->
+                <ul id="ban-chay-o-day"class="Ban-chay-list">
+                    <!-- item 1 -->
+                    <li class="loai-mot">
+                        <img class="places-img" src="./assets/img/ban-chay/banchay-1.jpg" alt="tom-so--1">
+                        <div class="ban-chay-body">
+                            <a href="" class="product-name">Tôm Hùm Xanh</a>
+                            <p class="product-price">5.900.000đ / kg</p>
+                            <button class="buy-now-btn">Mua Ngay</button>
+                        </div>
+                    </li>
+
+                    <!-- item 2 -->
+                    <li class="loai-mot">
+                        <img class="places-img" src="./assets/img/ban-chay/banchay-2.jpg" alt="tom-so--1">
+                        <div class="ban-chay-body">
+                            <a href="" class="product-name">Ghẹ Xanh Vũng Tàu</a>
+                            <p class="product-price">4.900.000đ / kg</p>
+                            <button class="buy-now-btn">Mua Ngay</button>
+                        </div>
+                    </li>
+                    
+                    <!-- item 3 -->
+                    <li class="loai-mot">
+                        <img class="places-img" src="./assets/img/ban-chay/banchay-3.jpg" alt="tom-so--1">
+                        <div class="ban-chay-body">
+                            <a href="" class="product-name">Ca Tầm Hàn Quốc</a>
+                            <p class="product-price">1.900.000đ / kg</p>
+                            <button class="buy-now-btn">Mua Ngay</button>
+                        </div>
+                    </li>
+                    
+                    <!-- item 4 -->
+                    <li class="loai-mot">
+                        <img class="places-img" src="./assets/img/ban-chay/banchay-4.jpg" alt="tom-so--1">
+                        <div class="ban-chay-body">
+                            <a href="" class="product-name">Bào Ngư Hàn Quốc</a>
+                            <p class="product-price">6.900.000đ / kg</p>
+                            <button class="buy-now-btn">Mua Ngay</button>
+                        </div>
+                    </li>
+                    
+                    <!-- item 5 -->
+                    <li class="loai-mot">
+                        <img class="places-img" src="./assets/img/ban-chay/banchay-5.jpg" alt="tom-so--1">
+                        <div class="ban-chay-body">
+                            <a href="" class="product-name">Bạc Tuộc Vũng Tàu</a>
+                            <p class="product-price">2.900.000đ / kg</p>
+                            <button class="buy-now-btn">Mua Ngay</button>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            
+            
+            <!-- slider tôm -->
+            <div class="slider-tom slider-chung"></div>
+            
+            <!-- Tom -->
+            <div id="tom-o-day" class="tom css-content">
+                <div class="tieu-de-tom css-tieu-de">
+                    <p class="title-full">Tôm</p>
+                    <button class="xem-them-btn">Xem Thêm</button>
+                </div>
+
+                <!-- danh sách tôm -->
+                <ul class="tom-list">
+                    <li class="loai-mot">
+                        <img class="places-img" src="./assets/img/tom/tom-hum-che-bien.jpg" alt="tom-so--1">
+                        <div class="ban-chay-body">
+                            <a href="" class="product-name">Tôm Hùm Chế Biến</a>
+                            <p class="product-price">9.900.000đ / kg</p>
+                            <button class="buy-now-btn">Mua Ngay</button>
+                        </div>
+                    </li>
+
+                    <!-- item 2 -->
+                    <li class="loai-mot">
+                        <img class="places-img" src="./assets/img/tom/tom-hum-xanh.jpg" alt="tom-so--1">
+                        <div class="ban-chay-body">
+                            <a href="" class="product-name">Tôm Hùm Ở Mỹ</a>
+                            <p class="product-price">7.900.000đ / kg</p>
+                            <button class="buy-now-btn">Mua Ngay</button>
+                        </div>
+                    </li>
+                    
+                    <!-- item 3 -->
+                    <li class="loai-mot">
+                        <img class="places-img" src="./assets/img/tom/tom-cang-xanh.jpg" alt="tom-so--1">
+                        <div class="ban-chay-body">
+                            <a href="" class="product-name">Tôm Càng Bạc Liêu</a>
+                            <p class="product-price">1.900.000đ / kg</p>
+                            <button class="buy-now-btn">Mua Ngay</button>
+                        </div>
+                    </li>
+                    
+                    <!-- item 4 -->
+                    <li class="loai-mot">
+                        <img class="places-img" src="./assets/img/tom/tom-su.jpg" alt="tom-so--1">
+                        <div class="ban-chay-body">
+                            <a href="" class="product-name">Tôm Sú Bạc Liêu</a>
+                            <p class="product-price">900.000đ / kg</p>
+                            <button class="buy-now-btn">Mua Ngay</button>
+                        </div>
+                    </li>
+                    
+                    <!-- item 5 -->
+                    <li class="loai-mot">
+                        <img class="places-img" src="./assets/img/tom/tom-the.jpg" alt="tom-so--1">
+                        <div class="ban-chay-body">
+                            <a href="" class="product-name">Tôm Thẻ Bạc Liêu</a>
+                            <p class="product-price">500.000đ / kg</p>
+                            <button class="buy-now-btn">Mua Ngay</button>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- slider Cua-Ghe -->
+            <div class="slider-cua-ghe slider-chung">
+                <div class="slide-cua-ghe-con slide-chung-con"></div>
+            </div>
+
+            <!-- Cua-Ghe -->
+            <div id="cua-ghe-o-day" class="cua-ghe css-content">
+                <div class="tieu-de-tom css-tieu-de">
+                    <p class="title-full">Cua Ghẹ</p>
+                    <button class="xem-them-btn">Xem Thêm</button>
+                </div>
+
+                <!-- danh sách Cua-Ghe -->
+                <ul class="cua-ghe-list">
+                    <li class="loai-mot">
+                        <img class="places-img" src="./assets/img/cua/cua-che-bien.jpg  " alt="tom-so--1">
+                        <div class="ban-chay-body">
+                            <a href="" class="product-name">King Grab Chế Biến</a>
+                            <p class="product-price">9.900.000đ / kg</p>
+                            <button class="buy-now-btn">Mua Ngay</button>
+                        </div>
+                    </li>
+
+                    <!-- item 2 -->
+                    <li class="loai-mot">
+                        <img class="places-img" src="./assets/img/cua/king-grab-o-my.jpg" alt="tom-so--1">
+                        <div class="ban-chay-body">
+                            <a href="" class="product-name">King Grab Ở Mỹ</a>
+                            <p class="product-price">7.900.000đ / kg</p>
+                            <button class="buy-now-btn">Mua Ngay</button>
+                        </div>
+                    </li>
+                    
+                    <!-- item 3 -->
+                    <li class="loai-mot">
+                        <img class="places-img" src="./assets/img/cua/cua-gach-ca-mau.jpg" alt="tom-so--1">
+                        <div class="ban-chay-body">
+                            <a href="" class="product-name">Cua Gạch Cà Mau</a>
+                            <p class="product-price">1.900.000đ / kg</p>
+                            <button class="buy-now-btn">Mua Ngay</button>
+                        </div>
+                    </li>
+                    
+                    <!-- item 4 -->
+                    <li class="loai-mot">
+                        <img class="places-img" src="./assets/img/cua/cua-gach-han-quoc.jpg" alt="tom-so--1">
+                        <div class="ban-chay-body">
+                            <a href="" class="product-name">Cua Gạch Hàn Quốc</a>
+                            <p class="product-price">900.000đ / kg</p>
+                            <button class="buy-now-btn">Mua Ngay</button>
+                        </div>
+                    </li>
+                    
+                    <!-- item 5 -->
+                    <li class="loai-mot">
+                        <img class="places-img" src="./assets/img/cua/ghe-xanh-vung-tau.jpg" alt="tom-so--1">
+                        <div class="ban-chay-body">
+                            <a href="" class="product-name">Ghẹ Xanh Vũng Tàu</a>
+                            <p class="product-price">500.000đ / kg</p>
+                            <button class="buy-now-btn">Mua Ngay</button>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- slider Ca -->
+            <div class="slider-ca slider-chung">
+                <div class="slider-ca-con slide-chung-con"></div>
+            </div>
+            <!-- Ca -->
+            <div id="ca-o-day" class="ca css-content">
+                <div class="tieu-de-ca css-tieu-de">
+                    <p class="title-full">Cá</p>
+                    <button class="xem-them-btn">Xem Thêm</button>
+                </div>
+
+                <!-- danh sách Ca -->
+                <ul class="ca-list">
+                    <li class="loai-mot">
+                        <img class="places-img" src="./assets/img/ca/ca-hoi-che-bien.jpg  " alt="tom-so--1">
+                        <div class="ban-chay-body">
+                            <a href="" class="product-name">Ca Hồi Chế Biến</a>
+                            <p class="product-price">5.900.000đ / kg</p>
+                            <button class="buy-now-btn">Mua Ngay</button>
+                        </div>
+                    </li>
+
+                    <!-- item 2 -->
+                    <li class="loai-mot">
+                        <img class="places-img" src="./assets/img/ca/ca-mu-nhat-ban.jpg" alt="tom-so--1">
+                        <div class="ban-chay-body">
+                            <a href="" class="product-name">Cá Mú Nhật Bản</a>
+                            <p class="product-price">7.900.000đ / kg</p>
+                            <button class="buy-now-btn">Mua Ngay</button>
+                        </div>
+                    </li>
+                    
+                    <!-- item 3 -->
+                    <li class="loai-mot">
+                        <img class="places-img" src="./assets/img/ca/ca-tam-han-quoc.jpg" alt="tom-so--1">
+                        <div class="ban-chay-body">
+                            <a href="" class="product-name">Cá Tầm Hàn Quốc</a>
+                            <p class="product-price">1.900.000đ / kg</p>
+                            <button class="buy-now-btn">Mua Ngay</button>
+                        </div>
+                    </li>
+                    
+                    <!-- item 4 -->
+                    <li class="loai-mot">
+                        <img class="places-img" src="./assets/img/ca/ca-hoi-nhat-ban.jpg" alt="tom-so--1">
+                        <div class="ban-chay-body">
+                            <a href="" class="product-name">Cá Hồi Nhật Bản</a>
+                            <p class="product-price">900.000đ / kg</p>
+                            <button class="buy-now-btn">Mua Ngay</button>
+                        </div>
+                    </li>
+                    
+                    <!-- item 5 -->
+                    <li class="loai-mot">
+                        <img class="places-img" src="./assets/img/ca/ca-basa.jpg" alt="tom-so--1">
+                        <div class="ban-chay-body">
+                            <a href="" class="product-name">Cá Basa cần Thơ</a>
+                            <p class="product-price">500.000đ / kg</p>
+                            <button class="buy-now-btn">Mua Ngay</button>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- slider Bao-Ngu-Hau -->
+            <div class="slide-bao-ngu-hau slider-chung">
+                <div class="slide-bao-ngu-con slide-chung-con"></div>
+            </div>
+            <!-- Bao-Ngu-Hau -->
+            <div id="bao-ngu-hau-o-day" class="bao-ngu-hau css-content">
+                <div class="tieu-de-bao-ngu-hau css-tieu-de">
+                    <p class="title-full">Bào Ngư - Hàu</p>
+                    <button class="xem-them-btn">Xem Thêm</button>
+                </div>
+
+                <!-- danh sách Bao-Ngu-Hau -->
+                <ul class="bao-ngu-hau-list">
+                    <li class="loai-mot">
+                        <img class="places-img" src="./assets/img/bao-ngu/bao-ngu-che-bien.jpg  " alt="tom-so--1">
+                        <div class="ban-chay-body">
+                            <a href="" class="product-name">Bào Ngư Chế Biến</a>
+                            <p class="product-price">5.900.000đ / kg</p>
+                            <button class="buy-now-btn">Mua Ngay</button>
+                        </div>
+                    </li>
+
+                    <!-- item 2 -->
+                    <li class="loai-mot">
+                        <img class="places-img" src="./assets/img/bao-ngu/bao-ngu-nhat-ban.png" alt="tom-so--1">
+                        <div class="ban-chay-body">
+                            <a href="" class="product-name">Bào Ngư Nhật Bản</a>
+                            <p class="product-price">7.900.000đ / kg</p>
+                            <button class="buy-now-btn">Mua Ngay</button>
+                        </div>
+                    </li>
+                    
+                    <!-- item 3 -->
+                    <li class="loai-mot">
+                        <img class="places-img" src="./assets/img/bao-ngu/bao-ngu-han-quoc.jpg" alt="tom-so--1">
+                        <div class="ban-chay-body">
+                            <a href="" class="product-name">Bào Ngư Hàn Quốc</a>
+                            <p class="product-price">1.900.000đ / kg</p>
+                            <button class="buy-now-btn">Mua Ngay</button>
+                        </div>
+                    </li>
+                    
+                    <!-- item 4 -->
+                    <li class="loai-mot">
+                        <img class="places-img" src="./assets/img/bao-ngu/hau-vung-tau.jpg" alt="tom-so--1">
+                        <div class="ban-chay-body">
+                            <a href="" class="product-name">Hàu Vũng tàu</a>
+                            <p class="product-price">900.000đ / kg</p>
+                            <button class="buy-now-btn">Mua Ngay</button>
+                        </div>
+                    </li>
+                    
+                    <!-- item 5 -->
+                    <li class="loai-mot">
+                        <img class="places-img" src="./assets/img/bao-ngu/hau-my.jpg" alt="tom-so--1">
+                        <div class="ban-chay-body">
+                            <a href="" class="product-name">Hàu Mỹ</a>
+                            <p class="product-price">500.000đ / kg</p>
+                            <button class="buy-now-btn">Mua Ngay</button>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- slider Bach-Tuoc-Muc -->
+            <div class="slide-bach-tuoc-muc slider-chung">
+                <div class="slide-bach-tuoc-muc-con slide-chung-con"></div>
+            </div>
+            <!-- Bach-Tuoc-Muc -->
+            <div id="bach-tuoc-muc-o-day" class="bach-tuoc-muc css-content">
+                <div class="tieu-de-bach-tuoc-muc css-tieu-de">
+                    <p class="title-full">Bạch Tuộc - Mực</p>
+                    <button class="xem-them-btn">Xem Thêm</button>
+                </div>
+
+                <!-- danh sách Bao-Ngu-Hau -->
+                <ul class="bach-tuoc-muc-list">
+                    <li class="loai-mot">
+                        <img class="places-img" src="./assets/img/bach-tuoc/bach-tuoc-che-bien.jpg  " alt="tom-so--1">
+                        <div class="ban-chay-body">
+                            <a href="" class="product-name">Bạch Tuộc Chế Biến</a>
+                            <p class="product-price">5.900.000đ / kg</p>
+                            <button class="buy-now-btn">Mua Ngay</button>
+                        </div>
+                    </li>
+
+                    <!-- item 2 -->
+                    <li class="loai-mot">
+                        <img class="places-img" src="./assets/img/bach-tuoc/bach-tuoc-da-nang.jpg" alt="tom-so--1">
+                        <div class="ban-chay-body">
+                            <a href="" class="product-name">Bạch Tuộc Đà Nẵng</a>
+                            <p class="product-price">7.900.000đ / kg</p>
+                            <button class="buy-now-btn">Mua Ngay</button>
+                        </div>
+                    </li>
+                    
+                    <!-- item 3 -->
+                    <li class="loai-mot">
+                        <img class="places-img" src="./assets/img/bach-tuoc/bach-tuoc-vung-tau.jpg" alt="tom-so--1">
+                        <div class="ban-chay-body">
+                            <a href="" class="product-name">Bạch Tuộc Vũng Tàu</a>
+                            <p class="product-price">1.900.000đ / kg</p>
+                            <button class="buy-now-btn">Mua Ngay</button>
+                        </div>
+                    </li>
+                    
+                    <!-- item 4 -->
+                    <li class="loai-mot">
+                        <img class="places-img" src="./assets/img/bach-tuoc/bach-tuoc-quy-nhon.jpg" alt="tom-so--1">
+                        <div class="ban-chay-body">
+                            <a href="" class="product-name">Mực Trứng Quy Nhơn</a>
+                            <p class="product-price">900.000đ / kg</p>
+                            <button class="buy-now-btn">Mua Ngay</button>
+                        </div>
+                    </li>
+                    
+                    <!-- item 5 -->
+                    <li class="loai-mot">
+                        <img class="places-img" src="./assets/img/bach-tuoc/muc-nang-nuc.jpg" alt="tom-so--1">
+                        <div class="ban-chay-body">
+                            <a href="" class="product-name">Mực Nang Núc Korea</a>
+                            <p class="product-price">500.000đ / kg</p>
+                            <button class="buy-now-btn">Mua Ngay</button>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- slider Hai-San-Dong-Lanh -->
+            <div class="slide-hai-san-dong-lanh slider-chung">
+                <div class="slide-hai-san-dong-lanh-con slide-chung-con"></div>
+            </div>
+            
+            <!-- Hai-San-Dong-Lanh -->
+            <div id="hai-san-dong-lanh-o-day" class="hai-san-dong-lanh css-content">
+                <div class="tieu-de-hai-san-dong-lanh css-tieu-de">
+                    <p class="title-full">Hải Sản Đông Lạnh</p>
+                    <button class="xem-them-btn">Xem Thêm</button>
+                </div>
+
+                <!-- danh sách Hai-San-Dong-Lanh -->
+                <ul class="hai-san-dong-lanh-list">
+                    <li class="loai-mot">
+                        <img class="places-img" src="./assets/img/hai-san-dong-lanh/tom-hum-dong-lanh.jpg  " alt="tom-so--1">
+                        <div class="ban-chay-body">
+                            <a href="" class="product-name">Tôm Hùm Vũng Tàu</a>
+                            <p class="product-price">5.900.000đ / kg</p>
+                            <button class="buy-now-btn">Mua Ngay</button>
+                        </div>
+                    </li>
+
+                    <!-- item 2 -->
+                    <li class="loai-mot">
+                        <img class="places-img" src="./assets/img/hai-san-dong-lanh/king-grab-dong-lanh.jpg" alt="tom-so--1">
+                        <div class="ban-chay-body">
+                            <a href="" class="product-name">King Grab Ở Mỹ</a>
+                            <p class="product-price">7.900.000đ / kg</p>
+                            <button class="buy-now-btn">Mua Ngay</button>
+                        </div>
+                    </li>
+                    
+                    <!-- item 3 -->
+                    <li class="loai-mot">
+                        <img class="places-img" src="./assets/img/hai-san-dong-lanh/ca-hoi-dong-lanh.jpg" alt="tom-so--1">
+                        <div class="ban-chay-body">
+                            <a href="" class="product-name">Cá Hồi NHật Bản</a>
+                            <p class="product-price">1.900.000đ / kg</p>
+                            <button class="buy-now-btn">Mua Ngay</button>
+                        </div>
+                    </li>
+                    
+                    <!-- item 4 -->
+                    <li class="loai-mot">
+                        <img class="places-img" src="./assets/img/hai-san-dong-lanh/bao-ngu-dong-lanh.jpg" alt="tom-so--1">
+                        <div class="ban-chay-body">
+                            <a href="" class="product-name">Bào Ngư Hàn Quốc</a>
+                            <p class="product-price">900.000đ / kg</p>
+                            <button class="buy-now-btn">Mua Ngay</button>
+                        </div>
+                    </li>
+                    
+                    <!-- item 5 -->
+                    <li class="loai-mot">
+                        <img class="places-img" src="./assets/img/hai-san-dong-lanh/muc-trung-dong-lanh.jpg" alt="tom-so--1">
+                        <div class="ban-chay-body">
+                            <a href="" class="product-name">Mực Trứng Vũng Tàu</a>
+                            <p class="product-price">500.000đ / kg</p>
+                            <button class="buy-now-btn">Mua Ngay</button>
+                        </div>
+                    </li>
+                </ul>
+            </div>
         </div>
 
         <!-- Phần footer -->
         <div id="footer">
-
+            
         </div>
     </div>
 </body>
