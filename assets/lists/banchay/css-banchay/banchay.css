@@ -309,7 +309,7 @@ html {
 
 .Ban-chay-list{
     display: inline-block;
-    /* padding-right: 30px; */
+    /* padding-bottom: 30px; */
 }
 
 .loai-mot {
@@ -319,6 +319,7 @@ html {
     margin-left: 20px;
     padding: 10px;
     border-radius: 4px;
+    margin-bottom: 20px;
 }
 
 .loai-mot .places-img {
